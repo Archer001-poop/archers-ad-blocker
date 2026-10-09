@@ -1,0 +1,59 @@
+[
+  { "id": 1, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "pagead.js", "resourceTypes": ["script"] } },
+  { "id": 2, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "/widget/ads", "resourceTypes": ["script"] } },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": "(googleadservices|doubleclick|googlesyndication|taboola|outbrain|adnxs|popads|adservice)",
+      "resourceTypes": ["script", "image", "xmlhttprequest", "sub_frame"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": "(analytics|telemetry|scorecardresearch|bugsnag|sentry|hotjar|mouseflow|luckyorange|stats|wp-plugin)",
+      "resourceTypes": ["script", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": "(facebook|twitter|linkedin|pinterest|reddit|yandex|unity|yahoo)",
+      "resourceTypes": ["script", "xmlhttprequest"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": "(realme|oppo|oneplus|samsung|apple|metrics|log-)",
+      "resourceTypes": ["script", "xmlhttprequest", "image"]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": "(-ad|/ads/|_ads\\.|adcolony|media\\.net)",
+      "resourceTypes": ["script", "xmlhttprequest", "image"]
+    }
+  },
+  { "id": 8, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "amazon", "resourceTypes": ["script", "image", "xmlhttprequest"] } },
+  { "id": 9, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "fresh", "resourceTypes": ["script", "xmlhttprequest"] } },
+  { "id": 10, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "tiktok", "resourceTypes": ["script", "xmlhttprequest"] } },
+  { "id": 11, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "byteoversea", "resourceTypes": ["script", "xmlhttprequest"] } },
+  { "id": 12, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "huawei", "resourceTypes": ["script", "xmlhttprequest"] } },
+  { "id": 13, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "hwcdn", "resourceTypes": ["script", "image"] } },
+  { "id": 14, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "hicloud", "resourceTypes": ["script", "xmlhttprequest", "image"] } },
+  { "id": 15, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "dbankcloud", "resourceTypes": ["script", "xmlhttprequest", "image"] } },
+  { "id": 16, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "xiaomi", "resourceTypes": ["script", "xmlhttprequest"] } },
+  { "id": 17, "priority": 1, "action": { "type": "block" }, "condition": { "urlFilter": "miui", "resourceTypes": ["script", "xmlhttprequest"] } }
+]

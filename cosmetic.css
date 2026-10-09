@@ -1,0 +1,24 @@
+/* Turtlecute Test Rules */
+.adbox.banner_ads.adsbox,
+.textads,
+
+/* General Rules */
+[class*="ad-box"], 
+[class*="ad-container"], 
+[class*="ad-slot"], 
+[class*="ad-wrapper"], 
+[id*="google_ads"], 
+[class*="banner-ad"],
+iframe[src*="googleads"],
+iframe[title*="Advertisement"],
+div[id*="ad-banner"],
+.advertisement,
+.sidebar-ad,
+#ad-slot {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}

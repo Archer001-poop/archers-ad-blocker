@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Pro YouTube Ad Blocker",
+  "version": "10.0",
+  "description": "Blocks tracker hosts and fast-forwards video ads.",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["youtube-blocker.js"],
+      "css": ["cosmetic.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
